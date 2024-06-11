@@ -1,0 +1,496 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url(fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.ttf)format("truetype");
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url(fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.ttf)format("truetype");
+}
+
+::placeholder{
+    font-family: "Satoshi";
+    font-size: 16px;
+    line-height: 21.6px;
+    color: #2A254B;
+}
+
+.header{
+    display: flex;
+    width: 1349px;
+    align-items: center;
+    margin-top: 20px;
+    &-text{
+        font-family: "Clash Display";
+        font-size: 24px;
+        line-height: 29.52px;
+        color:#22202E;
+    }
+    &-search-svg{
+        margin-left:10px ;
+        :hover{
+            cursor: pointer;
+        }
+    }
+    &-svgs{
+        display: flex;
+        margin-right:0;
+        :hover{
+            cursor: pointer;
+            background-color: rgb(0, 89, 255);
+        }
+        .header-svgs-profile{
+            margin-left: 5px;
+        }
+    }
+}
+
+.Header-Line{
+    display: flex;
+    margin-top: 20px;
+    img{
+        width: 1340px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #726E8D;
+
+}
+ul{
+    list-style: none;
+}
+.Main-Links{
+    &-ul{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 675px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+        li{
+            font-family: "Satoshi";
+            font-size: 16px;
+            line-height: 21.6px;
+            color: #726E8D;
+            :hover{
+                text-decoration: underline;
+                color: rgb(0, 89, 255);
+            }
+        }
+    }
+}
+
+.Main-Wrapper{
+    width: 1280px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    height: 584px;
+    display: flex;
+
+    .Wrapper-Info{
+        width: 760px;
+        background-color: #2A254B;
+
+        .Wrapper-Info-About{
+            margin-top: 60px;
+            margin-left: 60px;
+
+        }
+        .Wrapper-Info-Text{
+            font-family: "Clash Display";
+            font-size: 32px;
+            color: #FFFFFF;
+            line-height: 44.8px;
+            width: 550px;
+            margin-left: 0;
+        }
+        .Wrapper-Info-Button{
+            margin-top: 41px;
+            height: 56px;
+            width: 170px;
+            background-color: #F9F9F926;
+            color: #FFFFFF;
+            border: #F9F9F926;
+            font-family: "Satoshi";
+            font-size: 16px;
+            line-height: 24px;
+            
+        }
+
+        .Wrapper-Info-Down-Text{
+           margin-left: 60px;
+            margin-top: 196px;
+            font-family: "Satoshi";
+            font-size: 18px;
+            line-height: 27px;
+            color: #FFFFFF;
+            width: 602px;
+        }
+    }
+
+    .Wrapper-Img{
+        width: 520px;
+    }
+}
+
+
+.Features{
+    width: 1280px;
+    margin-bottom: 166px;
+    &-title{
+        text-align: center;
+        font-family: "Clash Display";
+        font-size: 24px;
+        line-height: 33.6px;
+        color: #2A254B;
+        margin-bottom: 51px;
+    }
+
+    &-Container{
+        display: flex;
+        gap: 60px ;
+
+        .Features-Block{
+            width: 270px;
+        }
+
+        .Features-Block-Title{
+            margin-bottom: 8px;
+            font-family: "Clash Display";
+            font-size: 20px;
+            line-height: 28px;
+            color: #2A254B;
+
+        }
+
+        .Features-Block-Text{
+            font-family: "Satoshi";
+            font-size: 16px;
+            line-height: 24px;
+            color: #2A254B;
+        }
+
+        .Features-Block-Svg{
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.Ceramics-Collections{
+    width: 1280px;
+    &-Title{
+        margin-bottom: 33px;
+        font-family: "Clash Display";
+        font-size: 32px;
+        line-height: 39.36px;
+        color: #2A254B;
+    }
+
+    .Collections-Blocks{
+        display: flex;
+        gap: 15px;
+
+
+        .Block-descriptions{
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-family: "Clash Display";
+            font-size: 20px;
+            line-height: 28px;
+            color: #2A254B;
+
+        }
+
+        .Block-price{
+            font-family: "Satoshi";
+            font-size: 18px;
+            line-height: 27px;
+            color: #2A254B;
+        }
+    }
+
+    .Ceramics-Collections-Button{
+        display: block;
+        margin-top: 51px;
+        margin-bottom: 56px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 56px;
+        width: 170px;
+        background-color: #F9F9F9;
+        color: #2A254B;
+        border: #F9F9F926;
+        font-family: "Satoshi";
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+.Popular-Product{
+    width: 1280px;
+    &-Title{
+        margin-bottom: 33px;
+        font-family: "Clash Display";
+        font-size: 32px;
+        line-height: 39.36px;
+        color: #2A254B;
+    }
+    .Popular-Product-Blocks{
+        display: flex;
+        gap: 15px;
+
+    .Product-descriptions{
+        margin-top: 24px;
+        margin-bottom: 8px;
+        font-family: "Clash Display";
+        font-size: 20px;
+        line-height: 28px;
+        color: #2A254B;
+
+    }
+    .Product-price{
+        font-family: "Satoshi";
+        font-size: 18px;
+        line-height: 27px;
+        color: #2A254B;
+    }
+}
+    .Popular-Product-Button{
+        display: block;
+        margin-top: 51px;
+        margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 56px;
+        width: 170px;
+        background-color: #F9F9F9;
+        color: #2A254B;
+        border: #F9F9F926;
+        font-family: "Satoshi";
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.Main-Registration{
+
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background-color: #F9F9F9;
+
+    &-wrapper{
+        width: 1280px;
+        background-color: white;
+
+
+        .Registration-container{
+            padding-top: 68px;
+            margin-bottom: 72px;
+            width: 571px;
+            height: 114px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .container-Title{
+                font-family: "Clash Display";
+                font-size: 36px;
+                line-height: 50.4px;
+                color: #2A254B;
+            }
+            .container-text{
+                margin-top: 16px;
+                width: 470px;
+                height: 48px;
+                font-family: "Satoshi";
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    }
+
+    .registration-form{
+        display: flex;
+        width: 472px;
+        
+        padding-bottom: 54px;
+    }
+    .form-input{
+        margin-top: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 354px;
+        height: 56px;
+        border: solid #F9F9F9;
+        background-color: #F9F9F9;
+    }
+    .form-button{
+        width: 118px;
+        height: 56px;
+        background-color: #2A254B;
+        color: #FFFFFF;
+        font-family: "Satoshi";
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 72px;
+
+        
+    }
+
+}
+
+.Home-wrapper{
+    display: flex;
+    width: 1280px;
+
+    .Home-page-left{
+        width: 536px;
+        margin-top: 72px;
+
+        .Left-Upper-Block{
+            margin-bottom: 196px;
+        }
+        .Left-Upper-Block-1{
+            font-family: "Clash Display";
+            font-size: 24px;
+            line-height: 33.6px;
+            color: #2A254B;
+        }
+        .Left-Upper-Block-2{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-family: "Satoshi";
+            font-size: 16px;
+            line-height: 21.6px;
+            color: #505977;
+        }
+        .Left-Upper-Block-3{
+            font-family: "Satoshi";
+            font-size: 16px;
+            line-height: 21.6px;
+            color: #505977;
+        }
+
+        .Home-page-left-button{
+            width: 150px;
+            height: 56px;
+            background-color: #F9F9F9;
+            font-family: "Satoshi";
+            font-size: 16px;
+            line-height: 24px;
+            color: #2A254B;
+            border:  solid#F9F9F9;
+        }
+    }
+
+    .Home-page-right{
+        margin-right: 0;
+        width: 685px;
+        height: 603px;
+    }
+}
+
+.Footer{
+    background-color: #2A254B;
+    color: white;
+    ::placeholder{
+        font-family: "Satoshi";
+        font-size: 16px;
+        line-height: 21.6px;
+        color: #FFFFFF;
+    }
+
+    &-Blocks{
+        display: flex;
+        width: 1280px;
+
+    }
+    .Footer-title{
+        font-family: "Clash Display";
+        font-size: 16px;
+        line-height: 19.68px;
+        color: #FFFFFF;
+        margin-top: 58px;
+        margin-bottom: 12px;
+    }
+
+    .Footer-text{
+        font-family: "Satoshi";
+        font-size: 14px;
+        line-height: 18.9px;
+        margin-top: 12px;
+    }
+
+    .Footer-form{
+        display: flex;
+        &-input{
+            width: 509px;
+            height: 56px;
+            background-color: #FFFFFF26;
+            border: 1px solid#2A254B;
+        }
+
+        &-button{
+            width: 118px;
+            height: 56px;
+            background-color: white;
+            font-family: "Satoshi";
+            font-size: 16px;
+            line-height: 24px;
+            color: #2A254B;
+            margin-left: -2px;
+        }
+    }
+
+    &-first-block{
+        margin-right: 109px;
+        margin-left: 20px;
+    }
+
+    &-second-block{
+        margin-bottom: 48px;
+        margin-right: 133px;
+    }
+
+    &-third-block{
+        margin-right: 109px;
+    }
+
+    .Footer-line{
+        display: flex;
+        img{
+            width: 1280px;
+        }
+    }
+    &-End{
+        display: flex;
+        margin-top: 24px;
+        padding-bottom: 25px;
+        width: 1280px;
+        .Footer-End-text{
+            width: 164px;
+            font-family: "Satoshi";
+            font-size: 14px;
+            line-height: 18.9px;
+
+            margin-left: 0;
+        }
+    }
+
+    &-End-applications{
+        display: flex;
+        gap: 25px   ;
+        margin-right: 0;
+    }
+}
